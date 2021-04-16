@@ -1,6 +1,8 @@
 import axios from "axios";
 import { FETCH_MOVIES, FETCH_CREDITS, ERROR_MESSAGE} from './types';
 
+
+
 //List of all movies
 export const fetchAllMovies =  (page = 1) => dispatch => {
   axios.get(`/movies?page=${page}`
